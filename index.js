@@ -11,7 +11,8 @@ for(let product of products){
         "d-flex",
         "direction-column",
         "relative",
-        "shadow")
+        "shadow",
+        "margin")
 
         // IMAGE CONTAINER
         const imgContainer = document.createElement("div")
