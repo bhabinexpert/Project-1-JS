@@ -1,8 +1,6 @@
-import { v4 as uuid } from 'https://jspm.dev/uuid';
-
 const products = [
   {
-    _id: uuid(),
+    _id: "10",
     name: "Acer Nitro 5 (17\")",
     img: "assets/img1.jpg",
     alt: "Acer Nitro 5 17-inch Gaming Laptop",
@@ -14,7 +12,7 @@ const products = [
     idealFor: "Gaming"
   },
   {
-    _id: uuid(),
+    _id: "11",
     name: "Acer Nitro V 15 (RTX 4050)",
     img: "assets/img2.jpg",
     alt: "Acer Nitro V 15 Gaming Laptop RTX 4050",
@@ -26,7 +24,7 @@ const products = [
     idealFor: "Content Creation"
   },
   {
-    _id: uuid(),
+    _id: "12",
     name: "Dell XPS 13 (2024)",
     img: "assets/img3.jpg",
     alt: "Dell XPS 13 Snapdragon X Elite",
@@ -38,7 +36,7 @@ const products = [
     idealFor: "Coding"
   },
   {
-    _id: uuid(),
+    _id: "13",
     name: "HP Omen Transcend 14",
     img: "assets/img4.jpg",
     alt: "HP Omen Transcend 14 Gaming Laptop",
@@ -50,7 +48,7 @@ const products = [
     idealFor: "Multitasking"
   },
   {
-    _id: uuid(),
+    _id: "14",
     name: "Lenovo Legion Pro 7i",
     img: "assets/img5.jpg",
     alt: "Lenovo Legion Pro 7i Gaming Laptop",
@@ -62,7 +60,7 @@ const products = [
     idealFor: "Video Editing"
   },
   {
-    _id: uuid(),
+    _id: "15",
     name: "Asus ROG Strix Scar 18",
     img: "assets/img6.jpg",
     alt: "Asus ROG Strix Scar 18 Gaming Laptop",
@@ -74,7 +72,7 @@ const products = [
     idealFor: "Streaming"
   },
   {
-    _id: uuid(),
+    _id: "16",
     name: "MacBook Air M2",
     img: "assets/img7.jpg",
     alt: "Apple MacBook Air M2",
@@ -86,7 +84,7 @@ const products = [
     idealFor: "Students"
   },
   {
-    _id: uuid(),
+    _id: "17",
     name: "MacBook Pro M2",
     img: "assets/img8.jpg",
     alt: "Apple MacBook Pro M2",
@@ -98,7 +96,7 @@ const products = [
     idealFor: "Design"
   },
   {
-    _id: uuid(),
+    _id: "18",
     name: "MSI Katana GF66",
     img: "assets/img9.jpg",
     alt: "MSI Katana GF66 Gaming Laptop",
@@ -110,7 +108,7 @@ const products = [
     idealFor: "Streaming"
   },
   {
-    _id: uuid(),
+    _id: "19",
     name: "Razer Blade 15",
     img: "assets/img10.jpg",
     alt: "Razer Blade 15 Gaming Laptop",
@@ -122,7 +120,7 @@ const products = [
     idealFor: "Video Editing"
   },
   {
-    _id: uuid(),
+    _id: "20",
     name: "Dell G15 Ryzen Edition",
     img: "assets/img11.jpg",
     alt: "Dell G15 Ryzen Gaming Laptop",
@@ -134,7 +132,7 @@ const products = [
     idealFor: "Gaming"
   },
   {
-    _id: uuid(),
+    _id: "21",
     name: "Asus TUF Gaming F15",
     img: "assets/img12.jpg",
     alt: "Asus TUF Gaming F15",
@@ -146,7 +144,7 @@ const products = [
     idealFor: "Durability"
   },
   {
-    _id: uuid(),
+    _id: "22",
     name: "ThinkPad X1 Carbon",
     img: "assets/img13.jpg",
     alt: "Lenovo ThinkPad X1 Carbon",
@@ -158,7 +156,7 @@ const products = [
     idealFor: "Business"
   },
   {
-    _id: uuid(),
+    _id: "23",
     name: "Microsoft Surface Laptop 5",
     img: "assets/img14.jpg",
     alt: "Microsoft Surface Laptop 5",
@@ -170,7 +168,7 @@ const products = [
     idealFor: "Office Work"
   },
   {
-    _id: uuid(),
+    _id: "24",
     name: "HP Pavilion x360",
     img: "assets/img15.jpg",
     alt: "HP Pavilion x360 Convertible Laptop",
@@ -182,7 +180,7 @@ const products = [
     idealFor: "Entertainment"
   },
   {
-    _id: uuid(),
+    _id: "25",
     name: "Samsung Galaxy Book 3",
     img: "assets/img16.jpg",
     alt: "Samsung Galaxy Book 3",
@@ -194,7 +192,7 @@ const products = [
     idealFor: "Office Use"
   },
   {
-    _id: uuid(),
+    _id: "26",
     name: "Acer Swift 3",
     img: "assets/img17.jpg",
     alt: "Acer Swift 3 Laptop",
@@ -206,7 +204,7 @@ const products = [
     idealFor: "Portability"
   },
   {
-    _id: uuid(),
+    _id: "27",
     name: "Asus Vivobook 15",
     img: "assets/img18.jpg",
     alt: "Asus Vivobook 15",
@@ -218,7 +216,7 @@ const products = [
     idealFor: "Students"
   },
   {
-    _id: uuid(),
+    _id: "28",
     name: "HP Envy 13",
     img: "assets/img19.jpg",
     alt: "HP Envy 13 Ultrabook",
@@ -230,7 +228,7 @@ const products = [
     idealFor: "Office Use"
   },
   {
-    _id: uuid(),
+    _id: "29",
     name: "Lenovo IdeaPad Slim 5",
     img: "assets/img20.jpg",
     alt: "Lenovo IdeaPad Slim 5",
