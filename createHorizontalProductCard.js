@@ -63,7 +63,7 @@ export const createHorizontalProductCard = (products, parentElement) =>{
         const QuantityContainerTitle = document.createElement("p")
         QuantityContainerTitle.classList.add("q-title")
         QuantityContainerTitle.innerText= "Qunatity"
-        QuantityContainerTitle.appendChild(QuantityContainerTitle)
+        quantityContainer.appendChild(QuantityContainerTitle)
 
         const quantity =document.createElement("div")
         quantity.classList.add("count-container", "d-flex", "align-center", "gap")
@@ -82,6 +82,7 @@ export const createHorizontalProductCard = (products, parentElement) =>{
         quantity.appendChild(incBtn)
         quantity.appendChild(value)
         quantity.appendChild(decBtn)
+
         quantityContainer.appendChild(quantity)
         cardDetailsContainer.appendChild(quantityContainer)
 
@@ -100,11 +101,25 @@ export const createHorizontalProductCard = (products, parentElement) =>{
             "justify-center",
             "gap",
             "cursor",
-            "btn-margin"
+            "btn-margin",
+            "cart-btn",
+            "card-width",
         )
         removeBtn.setAttribute("data-id", product._id);
-        removeBtn.innerText = "Remove"
-
+        removeBtn.innerText = "Remove"        
+        // Remove logic
+        removeBtn.addEventListener("click", () => {
+            // Get cart from localStorage
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            // Remove the product by _id
+            cart = cart.filter(item => item._id !== product._id);
+            // Update localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+            // Remove the card from the DOM
+            cardContainer.remove();
+            // Optionally, reload or update cart UI if needed
+        })
+        
         const saveBtn = document.createElement("button")
         saveBtn.classList.add(
             'button',

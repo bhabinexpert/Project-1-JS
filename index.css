@@ -202,3 +202,11 @@ html{
 .fav-color{
   color: red;
 }
+
+h2{
+  margin-left: 60px;
+}
+
+.card-width{
+  width: 37%;
+}

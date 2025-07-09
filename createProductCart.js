@@ -102,9 +102,8 @@ export const createProductCart = (products, parentElement, findProductInCard, pa
 
         const buttonText = document.createElement("span");
         const isProductInCart = findProductInCard(JSON.parse(localStorage.getItem("cart")), product._id);
-        if (pageType === "cart") {
-            buttonText.innerText = "Remove from cart";
-        } else if (pageType === "products" && isProductInCart) {
+       
+        if (pageType === "products" && isProductInCart) {
             buttonText.innerText = "Go to Cart";
         } else {
             buttonText.innerText = "Add to Cart";
