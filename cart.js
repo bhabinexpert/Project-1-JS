@@ -1,5 +1,6 @@
 import { createProductCart } from "./createProductCart.js";
 import { findproductInCart } from "./findProductInCard.js";
+import { createHorizontalProductCard } from "./createHorizontalProductCard.js";
 const cartContainer = document.getElementById("cart")
 
 let cart = [];
@@ -51,3 +52,4 @@ cartContainer.addEventListener("click", (event) => {
     }
   }
 });
+createHorizontalProductCard(cart,cart)
