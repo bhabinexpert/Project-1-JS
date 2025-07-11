@@ -62,23 +62,26 @@ export const createHorizontalProductCard = (products, parentElement) =>{
 
         const QuantityContainerTitle = document.createElement("p")
         QuantityContainerTitle.classList.add("q-title")
-        QuantityContainerTitle.innerText= "Qunatity"
+        QuantityContainerTitle.innerText= "Quantity"
         quantityContainer.appendChild(QuantityContainerTitle)
 
         const quantity =document.createElement("div")
         quantity.classList.add("count-container", "d-flex", "align-center", "gap")
+        
         const incBtn = document.createElement("button") 
         incBtn.classList.add("count")
         incBtn.innerText = "+"
-
-        const value = document.createElement("span")
-        value.classList.add("count-value")
-        value.innerText = "1"
-
+        
         const decBtn = document.createElement("button")
         decBtn.classList.add("count")
         decBtn.innerText = "-"
 
+        const value = document.createElement("span")
+        value.classList.add("count-value")
+        value.innerText = 1
+
+
+        
         quantity.appendChild(incBtn)
         quantity.appendChild(value)
         quantity.appendChild(decBtn)
@@ -147,3 +150,16 @@ export const createHorizontalProductCard = (products, parentElement) =>{
 
     
 }
+
+const incQunatityHandler = ((value) => {
+    value + 1
+    return
+})
+
+const decQtyHandler = ((value)=>{
+    value - 1
+    if(value === 0){
+        
+    }
+    return
+})

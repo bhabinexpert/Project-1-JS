@@ -43,7 +43,7 @@ html{
 }
 
 .products-page {
-  padding: 8rem 3rem 2rem 3rem;
+  padding: 4rem 3rem 2rem 3rem;
 }
 .card-vertical {
   width: 20rem; /* Increased from 16rem to 20rem for more space */
@@ -80,9 +80,7 @@ html{
   gap: 8px;
 }
 
-.main {
-  padding-top: 8rem;
-}
+
 
 .heading-2 {
   padding-bottom: 1rem;
@@ -137,7 +135,9 @@ html{
 
 #cart {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  grid-template-columns: auto;
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
@@ -203,10 +203,25 @@ html{
   color: red;
 }
 
-h2{
+/* h2{
   margin-left: 60px;
-}
+} */
 
 .card-width{
   width: 37%;
+}
+.main{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.cart-header{
+  margin-left: 100px;
+  margin-bottom: 60px;
 }
