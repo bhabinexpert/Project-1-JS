@@ -54,25 +54,37 @@
     <main class="d-flex gap justify-center">
         <div class="d-flex directional-column wrap gap" id = "cart"></div>
         <div class="final-price d-felx directional-column gap shadow padding-all-16 ">
-            <div>Price Details</div>
+            <div>CART OVERVIEW:</div>
+                <div>
+                    <hr>
+                </div>
             <div class="d-flex align-center justify-space-between">
-                <span>Price (2) items</span>
-                <span>Rs. 5000</span>
+                <span>Price (<span class="item-count"></span>) items</span>
+                <span>Rs. <span class="item-cost"></span></span>
+            </div>
+            <div class="d-flex align-center justify-space-between">
+                Offer price:<span class="offerprice"></span>
             </div>
             <div class="d-flex align-center justify-space-between">
                 <span>Discount</span>
-                <span>Rs. 1500</span>
+                <span>Rs.<span class="finalDiscount"></span>
+            </span>
             </div>
             <div class="d-flex align-center justify-space-between">
                 <span>Delivery Charge</span>
-                <span>Rs. 100</span>
+                <span>Rs.<span class="delivery-charge"></span></span>
             </div>
+
+            <div>
+                <hr>
+            </div>
+        
             <div class="d-flex align-center justify-space-between">
-                <span>Total Amount</span>
-                <span>Rs. 3600</span>
+                <span>Total Amount to be Paid:</span>
+                <span>Rs. <span class="total"></span></span>
             </div>
             <div>
-            You will save Rs. 1500 on this order..
+            You will save Rs.<span class="savings"></span> On this order..
             </div>
             <button class="button btn-primary cursor">
             Order Now

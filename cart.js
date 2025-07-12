@@ -51,3 +51,37 @@ cartContainer.addEventListener("click", (event) => {
     }
   }
 });
+
+const itemCount = document.querySelector(".item-count")
+itemCount.innerText = JSON.parse(localStorage.getItem("cart")).length
+
+const itemCost = document.querySelector(".item-cost")
+itemCost.innerText = JSON.parse(localStorage.getItem("cart")).reduce((acc, curr)=> acc + curr.oldprice,0)
+
+const fixPrice = JSON.parse(localStorage.getItem("cart")).reduce((acc,curr)=> acc + curr.oldprice,0)
+
+const discountedPrice = JSON.parse(localStorage.getItem("cart")).reduce((acc,curr)=> acc + curr.price,0)
+
+const offerPrice = document.querySelector(".offerprice")
+offerPrice.innerText = `Rs. ${discountedPrice}`
+
+const Discount = fixPrice - discountedPrice
+
+const finalDiscount = document.querySelector(".finalDiscount")
+finalDiscount.innerText = Discount
+
+const deliveryCharge = document.querySelector(".delivery-charge")
+const deliveryChargeAmnt = JSON.parse(localStorage.getItem("cart")).length * 100 
+deliveryCharge.innerText = deliveryChargeAmnt
+
+const totalBillAmnt = discountedPrice + deliveryChargeAmnt
+console.log(totalBillAmnt)
+const totalAmnt = document.querySelector(".total")
+totalAmnt.innerText = discountedPrice + deliveryChargeAmnt
+
+const savings = document.querySelector(".savings")
+savings.innerText = Discount
+
+console.log(Discount)
+console.log(fixPrice)
+console.log(discountedPrice)
